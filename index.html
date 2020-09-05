@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather Dashboard</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+</head>
+
+<body>
+
+    <header>
+
+        <h2> Weather Dashboard</h2>
+
+    </header>
+    <main>
+
+        <div class="container-flud">
+            <div class="row">
+                <div class="col-sm-4" id="searchdiv">
+                    <div class="font-weight-bold" id="search-bar">
+                        <h2>Search for a City:</h2>
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control" placeholder="Enter city name: Phoenix"
+                                aria-label="Recipient's username" aria-describedby="button-addon2">
+                            <div class="input-group-append">
+                                <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">Austin</li>
+                        <li class="list-group-item">Chicago</li>
+                        <li class="list-group-item">New York</li>
+                        <li class="list-group-item">Orlando</li>
+                        <li class="list-group-item">San Francisco</li>
+                        <li class="list-group-item">Seattle</li>
+                        <li class="list-group-item">Denver</li>
+                        <li class="list-group-item">Atlanta</li>
+
+                    </ul>
+                </div>
+
+                <div class="col-sm-8">
+                    <div class="outline">
+                        <h3>City Name plus Date and image</h3>
+                        <p>Temperature: <span id="temp"></span>&#176;F</p>
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                        <p>Wind Speed: <span id="windspeed"></span>MPH</p>
+                        <p>UV Index: <span id="uvindex"></span></p>
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h3>5-Day Forecast:</h3>
+
+
+                            <div class="parent">
+                                <div class="card" style="width: 10rem;">
+                                    <div class="card-body">
+                                        <p><span class="date"></span></p>                                        
+                                        <p>Temperature: <span id="temp"></span>&#176;F</p>
+                                        <p>Humidity: <span id="humidity"></span>%</p>
+                                    </div>
+
+                                </div>
+                                <div class="card" style="width: 10rem;">
+                                    <div class="card-body">
+                                        <p><span class="date"></span></p>                                        
+                                        <p>Temperature: <span id="temp"></span>&#176;F</p>
+                                        <p>Humidity: <span id="humidity"></span>%</p>
+                                    </div>
+
+                                </div>
+                                <div class="card" style="width: 10rem;">
+                                    <div class="card-body">
+                                        <p><span class="date"></span></p>                                        
+                                        <p>Temperature: <span id="temp"></span>&#176;F</p>
+                                        <p>Humidity: <span id="humidity"></span>%</p>
+                                    </div>
+
+                                </div>
+                                <div class="card" style="width: 10rem;">
+                                    <div class="card-body">
+                                        <p><span class="date"></span></p>                                        
+                                        <p>Temperature: <span id="temp"></span>&#176;F</p>
+                                        <p>Humidity: <span id="humidity"></span>%</p>
+                                    </div>
+
+                                </div>
+                                <div class="card" style="width: 10rem;">
+                                    <div class="card-body">
+                                        <p><span class="date"></span></p>                                        
+                                        <p>Temperature: <span id="temp"></span>&#176;F</p>
+                                        <p>Humidity: <span id="humidity"></span>%</p>
+
+                                    </div>
+
+                                </div>
+
+
+
+                            </div>
+
+
+
+
+
+                        </div>
+                    </div>
+
+
+
+    </main>
+
+</body>
+
+</html>

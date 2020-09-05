@@ -1,0 +1,58 @@
+
+/* styling my header */
+header h2{
+
+background-color: black;
+text-align: center; 
+color: white;
+
+margin: auto;
+width: 100%;
+border: green;
+padding: 20px;
+}
+
+
+/* created the container to be a full width container, spanning the entire width of the users view */
+.container-fluid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    
+    }
+/* giving padding to the search div  */
+    #searchdiv {
+
+        padding-left: 50px;
+            background-color: #f7f7f7;;
+    }
+     
+
+
+
+      .parent {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: 2fr;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
+        }
+
+        .outline {
+
+                outline-style: solid;
+                outline-color: #f7f7f7;
+                margin: 5px;
+        }
+/* putting spacing in between cards and setting font size */
+        .card {
+
+            font-size: 15px;
+            margin: 5px; 
+        }
+        .card-body {
+            color: white; 
+        background-color: blue; 
+        }
