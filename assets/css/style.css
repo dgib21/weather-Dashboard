@@ -1,0 +1,11 @@
+header h2{
+
+background-color: black;
+text-align: center; 
+color: white;
+
+margin: auto;
+width: 100%;
+border: green;
+padding: 20px;
+}
