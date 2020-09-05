@@ -1,3 +1,5 @@
+
+/* styling my header */
 header h2{
 
 background-color: black;
@@ -7,5 +9,22 @@ color: white;
 margin: auto;
 width: 100%;
 border: green;
-padding: 20px;
+padding: 50px;
 }
+/* created the container to be a full width container, spanning the entire width of the users view */
+.container-fluid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    
+    }
+/* giving padding to the search div  */
+    #searchdiv {
+
+        padding-left: 50px;
+    }
+     
+    
+   
