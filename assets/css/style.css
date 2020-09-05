@@ -9,10 +9,8 @@ color: white;
 margin: auto;
 width: 100%;
 border: green;
-padding: 20px;
+padding: 50px;
 }
-
-
 /* created the container to be a full width container, spanning the entire width of the users view */
 .container-fluid {
     display: grid;
