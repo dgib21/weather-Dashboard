@@ -7,6 +7,7 @@ var temperatureEl = document.querySelector("#temp");
 var windspeedEl = document.querySelector("#windspeed"); 
 var humidityEl = document.querySelector("#humidity"); 
 var currentUVIEl = document.querySelector("#uvindex");
+var currentCityEl = document.querySelector("#cityName")
 
 
 
@@ -86,6 +87,13 @@ userFormEl.addEventListener("submit", formSubmitHandler);
 var displayWeatherInfo = function (weatherData, searchTerm) {
     console.log(weatherData); 
     console.log(searchTerm); 
+
+    var day = moment().format("MM/DD/YYYY");
+    $("#currentDay").text("(" +day + ")");
+
+    //display the name of the city and the current date
+  currentCity = weatherData.name + " " + "(" + day + ")";
+  currentCityEl.textContent = currentCity;
 
     var currentTemp = Math.round((weatherData.main.temp-273.15) * 1.8 + 32);
    // formula found - https://www.inchcalculator.com/convert/meter-per-second-to-mile-per-hour/
