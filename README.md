@@ -26,7 +26,7 @@ THEN I am again presented with current and future conditions for that city
 
 
 # My Finished Product
-Here is the [Deployed Application Link](https://dgib21.github.io/javascriptQuiz/) for my assignment. 
+Here is the [Deployed Application Link](https://dgib21.github.io/weather-Dashboard/) for my assignment. 
 
 
 
