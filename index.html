@@ -24,107 +24,110 @@
         <div class="container-flud">
             <div class="row">
                 <div class="col-sm-4" id="searchdiv">
-                   
+                        <div class="searchbar">
                     <form id="user-form" class="form-input">
                         <label class="form-label" for="username">Username</label>
                         <input name="username" id="username" type="text" autofocus="true" class="form-input" />
                         <button type="submit" class="btn btn-primary">Search</button>
-                      </form>
-
-
-
-                      </div>
-                    </div>
+                    </form>
                         
-                    </div>
-                    <ul class="list-group">
-                        <li class="list-group-item">Austin</li>
-                        <li class="list-group-item">Chicago</li>
-                        <li class="list-group-item">New York</li>
-                        <li class="list-group-item">Orlando</li>
-                        <li class="list-group-item">San Francisco</li>
-                        <li class="list-group-item">Seattle</li>
-                        <li class="list-group-item">Denver</li>
-                        <li class="list-group-item">Atlanta</li>
-
-                    </ul>
                 </div>
 
+                </div>
+            </div>
+
+        
+        <ul class="list-group">
+            <li class="list-group-item">Austin</li>
+            <li class="list-group-item">Chicago</li>
+            <li class="list-group-item">New York</li>
+            <li class="list-group-item">Orlando</li>
+            <li class="list-group-item">San Francisco</li>
+            <li class="list-group-item">Seattle</li>
+            <li class="list-group-item">Denver</li>
+            <li class="list-group-item">Atlanta</li>
+
+        </ul>
+    </div>
+        </div>
+        
+        <div class="col-sm-8">
+            <div class="outline">
+                <h3><span id="cityName"></span></h3>
+                <p>Temperature: <span id="temp"></span>&#176;F</p>
+                <p>Humidity: <span id="humidity"></span>%</p>
+                <p>Wind Speed: <span id="windspeed"></span>MPH</p>
+                <p>UV Index: <span class="severe moderate favorable" id="uvindex"></span></p>
+
+            </div>
+
+            <div class="row">
                 <div class="col-sm-8">
-                    <div class="outline">
-                        <h3><span id="cityName"></span></h3>
-                        <p>Temperature: <span id="temp"></span>&#176;F</p>
-                        <p>Humidity: <span id="humidity"></span>%</p>
-                        <p>Wind Speed: <span id="windspeed"></span>MPH</p>
-                        <p>UV Index: <span class="severe moderate favorable" id="uvindex"></span></p>
-
-                    </div>
-
-                    <div class="row">
-                        <div class="col-sm-8">
-                            <h3>5-Day Forecast:</h3>
+                    <h3>5-Day Forecast:</h3>
 
 
-                            <div class="parent">
-                                <div class="card" style="width: 10rem;">
-                                    <div class="card-body">
-                                        <p><span class="date"></span></p>                                        
-                                        <p>Temperature: <span id="temp"></span>&#176;F</p>
-                                        <p>Humidity: <span id="humidity"></span>%</p>
-                                    </div>
-
-                                </div>
-                                <div class="card" style="width: 10rem;">
-                                    <div class="card-body">
-                                        <p><span class="date"></span></p>                                        
-                                        <p>Temperature: <span id="temp"></span>&#176;F</p>
-                                        <p>Humidity: <span id="humidity"></span>%</p>
-                                    </div>
-
-                                </div>
-                                <div class="card" style="width: 10rem;">
-                                    <div class="card-body">
-                                        <p><span class="date"></span></p>                                        
-                                        <p>Temperature: <span id="temp"></span>&#176;F</p>
-                                        <p>Humidity: <span id="humidity"></span>%</p>
-                                    </div>
-
-                                </div>
-                                <div class="card" style="width: 10rem;">
-                                    <div class="card-body">
-                                        <p><span class="date"></span></p>                                        
-                                        <p>Temperature: <span id="temp"></span>&#176;F</p>
-                                        <p>Humidity: <span id="humidity"></span>%</p>
-                                    </div>
-
-                                </div>
-                                <div class="card" style="width: 10rem;">
-                                    <div class="card-body">
-                                        <p><span class="date"></span></p>                                        
-                                        <p>Temperature: <span id="temp"></span>&#176;F</p>
-                                        <p>Humidity: <span id="humidity"></span>%</p>
-
-                                    </div>
-
-                                </div>
-
-
-
+                    <div class="parent">
+                        <div class="card" style="width: 10rem;">
+                            <div class="card-body">
+                                <p><span id="date"></span></p>
+                                <p>Temperature: <span id="tempC1"></span>&#176;F</p>
+                                <p>Humidity: <span id="humidityC1"></span>%</p>
                             </div>
 
 
 
-
+                        </div>
+                        <div class="card" style="width: 10rem;">
+                            <div class="card-body">
+                                <p><span id="date2"></span></p>
+                                <p>Temperature: <span id="tempC2"></span>&#176;F</p>
+                                <p>Humidity: <span id="humidityC2"></span>%</p>
+                            </div>
 
                         </div>
+                        <div class="card" style="width: 10rem;">
+                            <div class="card-body">
+                                <p><span id="date3"></span></p>
+                                <p>Temperature: <span id="tempC3"></span>&#176;F</p>
+                                <p>Humidity: <span id="humidityC3"></span>%</p>
+                            </div>
+
+                        </div>
+                        <div class="card" style="width: 10rem;">
+                            <div class="card-body">
+                                <p><span id="date4"></span></p>
+                                <p>Temperature: <span id="tempC4"></span>&#176;F</p>
+                                <p>Humidity: <span id="humidityC4"></span>%</p>
+                            </div>
+
+                        </div>
+                        <div class="card" style="width: 10rem;">
+                            <div class="card-body">
+                                <p><span id="date5"></span></p>
+                                <p>Temperature: <span id="tempC5"></span>&#176;F</p>
+                                <p>Humidity: <span id="humidityC5"></span>%</p>
+
+                            </div>
+
+                        </div>
+
+
+
                     </div>
+
+
+
+
+
+                </div>
+            </div>
 
     </main>
 
-<script src="./assets/js/script.js"></script>
-<!-- Installed moment for the date -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <!-- Installed moment for the date -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 
 
 
