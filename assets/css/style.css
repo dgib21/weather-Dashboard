@@ -54,3 +54,22 @@ padding: 20px;
             color: white; 
         background-color: blue; 
         }
+
+        /* UV Index colors */
+
+
+/* UV Index colors to display severity */
+  
+.severe {
+    background-color: #ff6961;
+    color: #000000
+  }
+.favorable {
+    background-color: #77dd77;
+    color: #000000
+  }
+  .moderate {
+    background-color: #faac54;
+    color: #000000;
+  }
+  

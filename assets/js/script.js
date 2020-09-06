@@ -67,6 +67,17 @@ var displayUvIndex = function (weatherData) {
         var currentUvIndex = response.value;
         currentUVIEl.textContent = currentUvIndex;
 
+   //display background color for UVIndex 
+   //https://www.epa.gov/sites/production/files/documents/uviguide.pdf
+   if (currentUvIndex < 4) {
+    currentUVIEl.classList = "favorable";
+  } else if (currentUvIndex > 4 && currentUvIndex < 7) {
+    currentUVIEl.classList = "moderate";
+  } else if (currentUvIndex > 7) {
+    currentUVIEl.classList = "severe";
+  }
+
+
 });
 };
 
