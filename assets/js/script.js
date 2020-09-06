@@ -55,10 +55,7 @@ var displayUvIndex = function (weatherData) {
     var currentLatitude = weatherData.coord.lat; 
     var currentLongitude = weatherData.coord.lon; 
 
-    var uvApiUrl =
-    "https://api.openweathermap.org/data/2.5/uvi?appid=2b92c62c9685a63968aa0914485ee11e&lat=" + currentLatitude +
-    "&lon=" + currentLongitude;    
-    
+    var uvApiUrl = "https://api.openweathermap.org/data/2.5/uvi?lat=" + currentLatitude + "&lon=" + currentLongitude + "&appid=2b92c62c9685a63968aa0914485ee11e"; 
     console.log (uvApiUrl); 
 
     fetch(uvApiUrl)
