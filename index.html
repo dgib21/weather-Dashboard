@@ -24,15 +24,18 @@
         <div class="container-flud">
             <div class="row">
                 <div class="col-sm-4" id="searchdiv">
-                    <div class="font-weight-bold" id="search-bar">
-                        <h2>Search for a City:</h2>
-                        <div class="input-group mb-3">
-                            <input type="text" class="form-control" placeholder="Enter city name: Phoenix"
-                                aria-label="Recipient's username" aria-describedby="button-addon2">
-                            <div class="input-group-append">
-                                <button class="btn btn-primary" type="button" id="button-addon2">Search</button>
-                            </div>
-                        </div>
+                   
+                    <form id="user-form" class="form-input">
+                        <label class="form-label" for="username">Username</label>
+                        <input name="username" id="username" type="text" autofocus="true" class="form-input" />
+                        <button type="submit" class="btn btn-primary">Search</button>
+                      </form>
+
+
+
+                      </div>
+                    </div>
+                        
                     </div>
                     <ul class="list-group">
                         <li class="list-group-item">Austin</li>
@@ -117,6 +120,9 @@
                     </div>
 
     </main>
+
+<script src="./assets/js/script.js"></script>
+
 
 </body>
 
