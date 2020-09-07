@@ -19,8 +19,7 @@ var sanfranEL = document.querySelector("#sanfran");
 var seattleEL = document.querySelector("#seattle"); 
 var denverEL = document.querySelector("#denver"); 
 var atlantaEL = document.querySelector("#atlanta"); 
-
-
+var currentCityIconEl = document.querySelector("#icon");
 
 
 
@@ -118,10 +117,11 @@ var displayUvIndex = function (weatherData) {
 userFormEl.addEventListener("submit", formSubmitHandler);
 
 var displayWeatherInfo = function (weatherData, searchTerm) {
-    console.log(weatherData);
-    console.log(searchTerm);
+  
 
     var day = moment().format("MM/DD/YYYY");
+   
+
     $("#currentDay").text("(" + day + ")");
 
     //display the name of the city and the current date

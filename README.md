@@ -28,5 +28,5 @@ THEN I am again presented with current and future conditions for that city
 # My Finished Product
 Here is the [Deployed Application Link](https://dgib21.github.io/weather-Dashboard/) for my assignment. 
 
-
+![Alt text](/assets/images/acceptanceCriteria.png?raw=true "DeployedApplication Image")
 
