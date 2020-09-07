@@ -1,6 +1,6 @@
 // created variables to store refrences to the form elements 
 var userFormEl = document.querySelector("#user-form");
-var nameInputEl = document.querySelector("#username");
+var nameInputEl = document.querySelector("#city");
 var temperatureEl = document.querySelector("#temp");
 var windspeedEl = document.querySelector("#windspeed");
 var humidityEl = document.querySelector("#humidity");
@@ -11,6 +11,18 @@ var secondCardForecastDateEl = document.querySelector("#date2");
 var thirdCardForecastDateEl = document.querySelector("#date3");
 var fourthCardForecastDateEl = document.querySelector("#date4");
 var fifthCardForecastDateEl = document.querySelector("#date5");
+var austinEL = document.querySelector("#austin"); 
+var chicagoEL = document.querySelector("#chicago"); 
+var newYorkEL = document.querySelector("#newyork"); 
+var orlandoEl = document.querySelector("#orlando");
+var sanfranEL = document.querySelector("#sanfran"); 
+var seattleEL = document.querySelector("#seattle"); 
+var denverEL = document.querySelector("#denver"); 
+var atlantaEL = document.querySelector("#atlanta"); 
+
+
+
+
 
 var tempC1 = document.querySelector("#tempC1");
 var tempC2 = document.querySelector("#tempC2");
@@ -31,9 +43,10 @@ var tempC5 = document.querySelector("#tempC5");
  var humidityC5 = document.querySelector("#humidityC5"); 
 
 
+
+
 //checking to see if the user has hit the form submission button 
 var formSubmitHandler = function (event) {
-    console.log("Button was clicked")
     event.preventDefault();
     // get value from input element
     var cityName = nameInputEl.value.trim();
@@ -207,3 +220,140 @@ var getCitiesFiveDayForecast = function (weatherData) {
 
 
 }
+
+
+document.getElementById("austin").addEventListener("click", function(){
+
+    event.preventDefault();
+    // get value from input element
+    var cityName = "austin"; 
+
+    if (cityName) {
+        getWeatherData(cityName);
+        nameInputEl.value = "";
+    } else {
+        alert("Please enter a city name");
+    }
+    console.log(event);
+
+
+});
+
+document.getElementById("chicago").addEventListener("click", function(){
+
+    event.preventDefault();
+    // get value from input element
+    var cityName = "chicago"; 
+
+    if (cityName) {
+        getWeatherData(cityName);
+        nameInputEl.value = "";
+    } else {
+        alert("Please enter a city name");
+    }
+    console.log(event);
+
+
+});
+
+document.getElementById("newyork").addEventListener("click", function(){
+
+    event.preventDefault();
+    // get value from input element
+    var cityName = "New York"; 
+
+    if (cityName) {
+        getWeatherData(cityName);
+        nameInputEl.value = "";
+    } else {
+        alert("Please enter a city name");
+    }
+    console.log(event);
+
+
+});
+
+document.getElementById("orlando").addEventListener("click", function(){
+
+    event.preventDefault();
+    // get value from input element
+    var cityName = "orlando"; 
+
+    if (cityName) {
+        getWeatherData(cityName);
+        nameInputEl.value = "";
+    } else {
+        alert("Please enter a city name");
+    }
+    console.log(event);
+
+
+});
+
+document.getElementById("sanfran").addEventListener("click", function(){
+
+    event.preventDefault();
+    // get value from input element
+    var cityName = "San Francisco"; 
+
+    if (cityName) {
+        getWeatherData(cityName);
+        nameInputEl.value = "";
+    } else {
+        alert("Please enter a city name");
+    }
+    console.log(event);
+
+
+});
+
+document.getElementById("seattle").addEventListener("click", function(){
+
+    event.preventDefault();
+    // get value from input element
+    var cityName = "seattle"; 
+
+    if (cityName) {
+        getWeatherData(cityName);
+        nameInputEl.value = "";
+    } else {
+        alert("Please enter a city name");
+    }
+    console.log(event);
+
+
+});
+
+document.getElementById("denver").addEventListener("click", function(){
+
+    event.preventDefault();
+    // get value from input element
+    var cityName = "denver"; 
+
+    if (cityName) {
+        getWeatherData(cityName);
+        nameInputEl.value = "";
+    } else {
+        alert("Please enter a city name");
+    }
+    console.log(event);
+
+
+});
+
+document.getElementById("atlanta").addEventListener("click", function(){
+
+    event.preventDefault();
+    // get value from input element
+    var cityName = "atlanta"; 
+
+    if (cityName) {
+        getWeatherData(cityName);
+        nameInputEl.value = "";
+    } else {
+        alert("Please enter a city name");
+    }
+    console.log(event);
+
+
+});

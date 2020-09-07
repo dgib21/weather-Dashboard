@@ -8,8 +8,6 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
 </head>
 
 <body>
@@ -21,106 +19,117 @@
     </header>
     <main>
 
-        <div class="container-flud">
+         <div class="container-fluid">
             <div class="row">
                 <div class="col-sm-4" id="searchdiv">
-                        <div class="searchbar">
-                    <form id="user-form" class="form-input">
-                        <label class="form-label" for="username">Username</label>
-                        <input name="username" id="username" type="text" autofocus="true" class="form-input" />
-                        <button type="submit" class="btn btn-primary">Search</button>
-                    </form>
-                        
-                </div>
+                    <div class="searchbar">
+                        <form id="user-form" class="form-input">
+                            <label class="form-label" for="username"><b>Search for a City:</b></label>
+                            <input name="city" id="city" type="text" autofocus="true" class="form-input"/>
+                                <button class="btn btn-primary buttoncolor" type="submit" id="button-addon2"><i class="fa fa-search text-white" aria-hidden="true"></i>
 
-                </div>
-            </div>
+                                  </button>
+                        </form>
 
-        
-        <ul class="list-group">
-            <li class="list-group-item">Austin</li>
-            <li class="list-group-item">Chicago</li>
-            <li class="list-group-item">New York</li>
-            <li class="list-group-item">Orlando</li>
-            <li class="list-group-item">San Francisco</li>
-            <li class="list-group-item">Seattle</li>
-            <li class="list-group-item">Denver</li>
-            <li class="list-group-item">Atlanta</li>
-
-        </ul>
-    </div>
-        </div>
-        
-        <div class="col-sm-8">
-            <div class="outline">
-                <h3><span id="cityName"></span></h3>
-                <p>Temperature: <span id="temp"></span>&#176;F</p>
-                <p>Humidity: <span id="humidity"></span>%</p>
-                <p>Wind Speed: <span id="windspeed"></span>MPH</p>
-                <p>UV Index: <span class="severe moderate favorable" id="uvindex"></span></p>
-
-            </div>
-
-            <div class="row">
-                <div class="col-sm-8">
-                    <h3>5-Day Forecast:</h3>
-
-
-                    <div class="parent">
-                        <div class="card" style="width: 10rem;">
-                            <div class="card-body">
-                                <p><span id="date"></span></p>
-                                <p>Temperature: <span id="tempC1"></span>&#176;F</p>
-                                <p>Humidity: <span id="humidityC1"></span>%</p>
-                            </div>
-
-
-
-                        </div>
-                        <div class="card" style="width: 10rem;">
-                            <div class="card-body">
-                                <p><span id="date2"></span></p>
-                                <p>Temperature: <span id="tempC2"></span>&#176;F</p>
-                                <p>Humidity: <span id="humidityC2"></span>%</p>
-                            </div>
-
-                        </div>
-                        <div class="card" style="width: 10rem;">
-                            <div class="card-body">
-                                <p><span id="date3"></span></p>
-                                <p>Temperature: <span id="tempC3"></span>&#176;F</p>
-                                <p>Humidity: <span id="humidityC3"></span>%</p>
-                            </div>
-
-                        </div>
-                        <div class="card" style="width: 10rem;">
-                            <div class="card-body">
-                                <p><span id="date4"></span></p>
-                                <p>Temperature: <span id="tempC4"></span>&#176;F</p>
-                                <p>Humidity: <span id="humidityC4"></span>%</p>
-                            </div>
-
-                        </div>
-                        <div class="card" style="width: 10rem;">
-                            <div class="card-body">
-                                <p><span id="date5"></span></p>
-                                <p>Temperature: <span id="tempC5"></span>&#176;F</p>
-                                <p>Humidity: <span id="humidityC5"></span>%</p>
-
-                            </div>
-
-                        </div>
-
-
-
+                        <ul class="list-group">
+                            <button class="btn-light btn-lg btn-outline-secondary text-left border-1" id="austin" value="austin">Austin</button>
+                            <button class="btn-light btn-lg btn-outline-secondary text-left w-100 border-1" id="chicago" value="chicago">Chicago</button>
+                            <button class="btn-light btn-lg btn-outline-secondary text-left w-100 border-1" id="newyork" value="newyork">New York</button>
+                            <button class="btn-light btn-lg btn-outline-secondary text-left w-100 border-1" id="orlando" value="orlando">Orlando</button>
+                            <button class="btn-light btn-lg btn-outline-secondary text-left w-100 border-1" id="sanfran" value="sanfran">San Francisco</button>
+                            <button class="btn-light btn-lg btn-outline-secondary text-left w-100 border-1" id="seattle" value="seattle">Seattle</button>
+                            <button class="btn-light btn-lg btn-outline-secondary text-left w-100 border-1" id="denver" value="denver">Denver</button>
+                            <button class="btn-light btn-lg btn-outline-secondary text-left w-100 border-1" id="atlanta" value="atlanta">Atlanta</button>
+            
+                        </ul>
                     </div>
 
-
-
-
-
                 </div>
+
+
+                <div class="col-sm-8">
+                    <div class="outline">
+                        <h3><span id="cityName"></span></h3>
+                        <p>Temperature: <span id="temp"></span>&#176;F</p>
+                        <p>Humidity: <span id="humidity"></span>%</p>
+                        <p>Wind Speed: <span id="windspeed"></span>MPH</p>
+                        <p>UV Index: <span class="severe moderate favorable" id="uvindex"></span></p>
+        
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-8">
+                            <h3>5-Day Forecast:</h3>
+        
+        
+                            <div class="parent">
+                                <div class="card" style="width: 10rem;">
+                                    <div class="card-body">
+                                        <p><span id="date"></span></p>
+                                        <p>Temperature: <span id="tempC1"></span>&#176;F</p>
+                                        <p>Humidity: <span id="humidityC1"></span>%</p>
+                                    </div>
+        
+        
+        
+                                </div>
+                                <div class="card" style="width: 10rem;">
+                                    <div class="card-body">
+                                        <p><span id="date2"></span></p>
+                                        <p>Temperature: <span id="tempC2"></span>&#176;F</p>
+                                        <p>Humidity: <span id="humidityC2"></span>%</p>
+                                    </div>
+        
+                                </div>
+                                <div class="card" style="width: 10rem;">
+                                    <div class="card-body">
+                                        <p><span id="date3"></span></p>
+                                        <p>Temperature: <span id="tempC3"></span>&#176;F</p>
+                                        <p>Humidity: <span id="humidityC3"></span>%</p>
+                                    </div>
+        
+                                </div>
+                                <div class="card" style="width: 10rem;">
+                                    <div class="card-body">
+                                        <p><span id="date4"></span></p>
+                                        <p>Temperature: <span id="tempC4"></span>&#176;F</p>
+                                        <p>Humidity: <span id="humidityC4"></span>%</p>
+                                    </div>
+        
+                                </div>
+                                <div class="card" style="width: 10rem;">
+                                    <div class="card-body">
+                                        <p><span id="date5"></span></p>
+                                        <p>Temperature: <span id="tempC5"></span>&#176;F</p>
+                                        <p>Humidity: <span id="humidityC5"></span>%</p>
+        
+                                    </div>
+        
+                                </div>
+        
+        
+        
+                            </div>
+        
+        
+        
+        
+        
+                        </div>
+                    </div>
             </div>
+
+
+            
+        </div>
+
+      
+
+            
+    </div> 
+
+
+   
+
 
     </main>
 
@@ -128,6 +137,7 @@
     <!-- Installed moment for the date -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
 
 
